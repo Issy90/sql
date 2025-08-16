@@ -1,6 +1,6 @@
 /* ASSIGNMENT 2 */
 /* SECTION 2 */
-
+/* PARTICIPANT NAME: ISRA KHAN */
 -- COALESCE
 /* 1. Our favourite manager wants a detailed long list of products, but is afraid of tables! 
 We tell them, no problem! We can produce a list with all of the appropriate details. 
