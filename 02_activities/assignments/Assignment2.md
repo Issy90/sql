@@ -54,7 +54,15 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+To store the customer address, we have two architecture proposals of slowly changing dimensions (SCD): 
+SCD Type 1: 
+In this type we will overwrite the address every time it changes so in this case the customer old address will be replaced with the new address any time there is a change in their address. To do this we simply add new columns that represent the address to the customer table. 
+ 
+SCD Type 2: 
+In this type we will retain the old address so we ensure the integrity of our data. In this example we won't lose the previous customer address because we will create a table that will hold all the historic data related to the address. The address table will have the customer as a foreign key. To know which address is the current one, we will add a Boolean column is_current_address and it will be true if the address is the most recent one and false otherwise. 
+
+For the tables I have added a complete response in the PDF file. (https://github.com/Issy90/sql/blob/assignment-two/02_activities/assignments/assignment_2_section1_Isra_Khan.pdf)
+
 ```
 
 ***
